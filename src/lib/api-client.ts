@@ -5,7 +5,7 @@ interface RetryRequestConfig extends InternalAxiosRequestConfig {
   _retry?: boolean
 }
 
-const baseURL = import.meta.env.VITE_API_BASE_URL?.trim() || undefined
+const baseURL = import.meta.env.VITE_API_URL?.trim().replace(/\/+$/, '') || undefined
 
 export const apiClient = axios.create({
   baseURL,

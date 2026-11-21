@@ -15,7 +15,7 @@ copy .env.example .env
 npm run dev
 ```
 
-`VITE_API_BASE_URL` is the only API origin setting. Leave it empty locally to use Vite's `/api` and `/media` proxies. Set it to the deployed API origin for production builds.
+`VITE_API_URL` is the only API origin setting. Leave it empty locally to use Vite's `/api` and `/media` proxies. Set it to the deployed API origin for production builds, for example `https://whereismymoney-xsg2.vercel.app`. Vite injects this value at build time, so redeploy the frontend after changing it in Vercel.
 
 ## Commands
 
